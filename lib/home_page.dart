@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test_flutter_draw/widgets/circle_widget.dart';
+import 'package:test_flutter_draw/widgets/image_widget.dart';
 import 'package:test_flutter_draw/widgets/line_widget.dart';
 import 'package:test_flutter_draw/widgets/oval_widget.dart';
 import 'package:test_flutter_draw/widgets/path_widget.dart';
@@ -15,11 +16,11 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("绘制文字"),
+        title: const Text("绘制图片"),
       ),
-      body: const TextWidget1(),
+      body: const ImageWidget(),
       //LineWidget()  RectWidget()  CircleWidget()  OvalWidget()  RoundRectWidget()  PathWidget()
-      //PathWidget()  TextWidget1()  TextWidget2()
+      //PathWidget()  TextWidget1()  TextWidget2()  ImageWidget
     );
   }
 }
